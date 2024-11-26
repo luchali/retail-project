@@ -26,28 +26,34 @@ const SignIn = () => {
   }
 
   return (
-    <div>
-      <form>
+    <div className="sign-in">
+      <form className="form">
         <h2>Log in</h2>
-        <input 
+        <div className="form__inputs">
+
+           <input 
+           className="form__inputs__item"
           placeholder="Please enter your email"
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
           type="email" 
         />
         <input 
+        className="form__inputs__item"
           placeholder="Please enter your password"
           value={password} 
           onChange={(e) => setPassword(e.target.value)} 
           type="password" 
         />
         
-        <button onClick={logIn}>Log in</button>
+        <button className="btn__form" onClick={logIn}>Log in</button>
         
         {error ? <p style={{color: "red"}}>{error}</p> : ""}
+        </div>
+       
       </form>
-      <button>
-      <NavLink to="/welcomepage">
+      <button className="btn">
+      <NavLink to="/welcomepage" className="btn__link">
         Come back to Welcome page
       </NavLink>
       </button>

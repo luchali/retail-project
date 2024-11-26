@@ -29,33 +29,39 @@ const SignUp = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={register}>
+    <div className="sign-up">
+      <form onSubmit={register} className="form">
         <h2>Create an account</h2>
+        <div className="form__inputs">
         <input 
+        className="form__inputs__item"
           placeholder="Please enter your email"
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
           type="email" 
         />
         <input 
+        className="form__inputs__item"
           placeholder="Please enter your password"
           value={password} 
           onChange={(e) => setPassword(e.target.value)} 
           type="password" 
         />
         <input 
-          placeholder="Please enter your password again"
+        className="form__inputs__item"
+          placeholder="Repeat your password "
           value={copyPassword} 
           onChange={(e) => setCopyPassword(e.target.value)} 
           type="password" 
           />
-        <button>Create</button>
+        <button className="btn__form">Create</button>
         
-        {error ? <p style={{color: "red"}}>{error}</p> : ""}
+        {error ? <p style={{color: "red"}}>{error}</p> : ""}  
+        </div>
+        
       </form>
-      <button>
-      <NavLink to="/welcomepage">
+      <button className="btn">
+      <NavLink to="/welcomepage" className="btn__link">
         Come back to Welcome page
       </NavLink>
       </button>

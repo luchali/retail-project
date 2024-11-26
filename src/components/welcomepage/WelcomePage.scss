@@ -14,50 +14,89 @@
 }
 
 .btn {
+  &__link{
+    text-decoration: none;
+    color: $color-organic-cocoa;
+
+  }
+
+  &__form {
+     
 & {
-  background-color: #0078d0;
-  border: 0;
-  border-radius: 56px;
-  color: #fff;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
   cursor: pointer;
-  display: inline-block;
-  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  font-size: 18px;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: small;
   font-weight: 600;
-  outline: 0;
-  padding: 16px 21px;
-  position: relative;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
-  transition: all .3s;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-}
-
-&:before {
-  background-color: initial;
-  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
-  border-radius: 125px;
-  content: "";
-  height: 50%;
-  left: 4%;
-  opacity: .5;
-  position: absolute;
-  top: 0;
-  transition: all .3s;
-  width: 92%;
+  margin-top: 15px;
 }
 
 &:hover {
-  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
-  transform: scale(1.05);
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
 
-@media (min-width: 768px) {
-  & {
-    padding: 16px 48px;
   }
+
+& {
+  appearance: none;
+  background-color: $color-organic-green;
+  border: 2px solid $color-organic-cocoa;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: $color-organic-butter;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform;
+}
+
+&:disabled {
+  pointer-events: none;
+}
+
+&:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+&:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
 
   &__welcome {
@@ -104,6 +143,8 @@
   border-radius: 10px;
 }
 
+
+
 @keyframes glowing-button {
   0% {
     background-position: 0 0;
@@ -127,15 +168,7 @@
   top: 0;
   border-radius: 10px;
 }   
-  &__link{
-    text-decoration: none;
-    color: $color-organic-cocoa;
+  
   }
-  }
- 
  
 }
-
-
-
-

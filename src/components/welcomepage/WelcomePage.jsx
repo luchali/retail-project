@@ -8,13 +8,13 @@ function WelcomePage () {
     <h3>Do you want to start your business?</h3>
     <div className="welcome__buttons">
       <button className="btn btn__welcome">
-      <NavLink to="/signup" className="btn__welcome__link">
+      <NavLink to="/signup" className="btn__link">
         Registration
       </NavLink>
     </button>
 
       <button className="btn btn__welcome">
-        <NavLink to="/signin" className="btn__welcome__link">
+        <NavLink to="/signin" className="btn__link">
           Sign in
         </NavLink>
       </button>
