@@ -1,6 +1,7 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../../firebase";
+import { NavLink } from "react-router-dom";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -45,6 +46,11 @@ const SignIn = () => {
         
         {error ? <p style={{color: "red"}}>{error}</p> : ""}
       </form>
+      <button>
+      <NavLink to="/welcomepage">
+        Come back to Welcome page
+      </NavLink>
+      </button>
     </div>
   )
 }
