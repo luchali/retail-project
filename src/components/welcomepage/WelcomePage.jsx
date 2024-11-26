@@ -1,22 +1,25 @@
-// import './WelcomePage.scss';
+import './WelcomePage.scss';
 import { NavLink } from "react-router-dom";
 
 function WelcomePage () {
  return (
-  <div>
-    <h1>WELCOME!</h1>
+  <div className="welcome">
+    <h1 className="title">WELCOME!</h1>
     <h3>Do you want to start your business?</h3>
-    <button>
-      <NavLink to="/signup">
+    <div className="welcome__buttons">
+      <button className="btn btn__welcome">
+      <NavLink to="/signup" className="btn__welcome__link">
         Registration
       </NavLink>
     </button>
 
-    <button>
-      <NavLink to="/signin">
-        Sign in
-      </NavLink>
-    </button>
+      <button className="btn btn__welcome">
+        <NavLink to="/signin" className="btn__welcome__link">
+          Sign in
+        </NavLink>
+      </button>
+    </div>
+    
   </div>
  );
 }
