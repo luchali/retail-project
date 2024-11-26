@@ -14,11 +14,11 @@ function CatalogPage () {
   console.log(products)
 
   return ( 
-    <div>
+    <div className="catalog">
     <h1>Products count: {products?.length}</h1>
     
-    <NavLink to="/addproduct">
-      <p>lalslsl</p>
+    <NavLink to="/addproduct" className="btn__form">
+      <p>Add product</p>
     </NavLink>
     <ul>
       {products?.map((item) => (
@@ -28,6 +28,11 @@ function CatalogPage () {
         ))}
     </ul>
     
+    <button className="btn">
+      <NavLink to="/mainpage" className="btn__link">
+        Come back to main page
+      </NavLink>
+      </button>
     </div>
 
 
