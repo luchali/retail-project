@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.181828e7.js",
-    "static/js/453.1816e2ff.chunk.js": "/static/js/453.1816e2ff.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.181828e7.js.map": "/static/js/main.181828e7.js.map",
-    "453.1816e2ff.chunk.js.map": "/static/js/453.1816e2ff.chunk.js.map"
+    "main.css": "/retail-project/static/css/main.646b7d18.css",
+    "main.js": "/retail-project/static/js/main.8afadfb4.js",
+    "static/js/453.1816e2ff.chunk.js": "/retail-project/static/js/453.1816e2ff.chunk.js",
+    "static/media/edit-catalog.png": "/retail-project/static/media/edit-catalog.4c557988e4c79d408515.png",
+    "static/media/salers-generate-link.png": "/retail-project/static/media/salers-generate-link.d88e3e2ef1979489e3a8.png",
+    "index.html": "/retail-project/index.html",
+    "main.646b7d18.css.map": "/retail-project/static/css/main.646b7d18.css.map",
+    "main.8afadfb4.js.map": "/retail-project/static/js/main.8afadfb4.js.map",
+    "453.1816e2ff.chunk.js.map": "/retail-project/static/js/453.1816e2ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.181828e7.js"
+    "static/css/main.646b7d18.css",
+    "static/js/main.8afadfb4.js"
   ]
 }
