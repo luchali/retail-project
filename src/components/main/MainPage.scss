@@ -1,0 +1,28 @@
+.main{
+ &__categories {
+  display: flex;
+  justify-content: space-around;
+
+  &__item{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    border-radius: 20px;
+
+    &--catalog{
+      background-image: url(../../pictures/edit-catalog.png);
+    }
+   
+    &--adslink{
+      background-image: url(../../pictures/salers-generate-link.png);
+    }
+
+    &__title{
+      color: $color-organic-butter;
+      text-shadow: 1px 1px 2px rgba(143, 229, 148, 1);
+    }
+  }
+ }
+
+}
