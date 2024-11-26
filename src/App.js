@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import WelcomePage from './components/welcomepage/WelcomePage'
 import SignUp from './components/auth/SignUp';
 import SignIn from './components/auth/SignIn';
@@ -20,6 +20,7 @@ function App() {
           <Route path='/signin' element={<SignIn />}/>
           <Route path='/catalogpage' element={<CatalogPage />} />
           <Route path='/addproduct' element={<AddProduct />}/>
+           <Route path='/' element={<Navigate to="/welcomepage" />}/>
         </Routes>
 
       <AuthDetails />
