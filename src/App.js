@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import WelcomePage from './components/welcomepage/WelcomePage'
 import SignUp from './components/auth/SignUp';
 import SignIn from './components/auth/SignIn';
@@ -11,7 +11,7 @@ import AddProduct from './components/catalog/AddProduct';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter basename="/retail-project">
 
         <Routes>
           <Route path="/mainpage" element={<MainPage />} />
@@ -24,7 +24,9 @@ function App() {
         </Routes>
 
       <AuthDetails />
-      </Router>
+
+      </BrowserRouter>
+      
       
     </div>
   );
