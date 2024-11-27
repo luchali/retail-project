@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/retail-project/static/css/main.a8345c29.css",
-    "main.js": "/retail-project/static/js/main.d066fa2a.js",
+    "main.js": "/retail-project/static/js/main.c6944fda.js",
     "static/js/453.1816e2ff.chunk.js": "/retail-project/static/js/453.1816e2ff.chunk.js",
     "static/media/edit-catalog.png": "/retail-project/static/media/edit-catalog.4c557988e4c79d408515.png",
     "static/media/salers-generate-link.png": "/retail-project/static/media/salers-generate-link.d88e3e2ef1979489e3a8.png",
     "index.html": "/retail-project/index.html",
     "main.a8345c29.css.map": "/retail-project/static/css/main.a8345c29.css.map",
-    "main.d066fa2a.js.map": "/retail-project/static/js/main.d066fa2a.js.map",
+    "main.c6944fda.js.map": "/retail-project/static/js/main.c6944fda.js.map",
     "453.1816e2ff.chunk.js.map": "/retail-project/static/js/453.1816e2ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a8345c29.css",
-    "static/js/main.d066fa2a.js"
+    "static/js/main.c6944fda.js"
   ]
 }
