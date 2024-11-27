@@ -63,7 +63,7 @@ function AddProduct (){
   </form>
 
     <button className="btn">
-      <NavLink to="/catalogpage" className="btn__link">
+      <NavLink to="/retail-project/catalogpage" className="btn__link">
         Come back to catalog page
       </NavLink>
       </button>

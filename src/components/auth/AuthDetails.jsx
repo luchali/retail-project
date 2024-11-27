@@ -1,20 +1,28 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { auth } from "../../firebase";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
-
+const publicPages = ['/signin', '/signup']
 const AuthDetails = () => {
   const [authUser, setAuthUser] = useState(null);
   const navigate = useNavigate(); // Ініціалізація useNavigate
-
+  const location = useLocation();
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user) => {
       if(user) {
         setAuthUser(user);
-        navigate("/mainpage"); // Переадресація на головну сторінку після входу
+        if (!authUser) {
+          navigate("/mainpage");
+        }
+        
       } else {
         setAuthUser(null);
+
+        if (!publicPages.includes(location.pathname)){
+          navigate("/welcomepage");
+        }
+        
       }
     });
     return () => {
